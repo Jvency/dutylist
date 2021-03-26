@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+  <div class="row">
+    <div class="card" style="color: #fff;"> 
+        <!--for demo wrap-->
+        <div class="card-header">
+          <h1>Duty List</h1>
+        </div>
+        
+        <div class="card-body">
+          <h2> Duties </h2>
+                 {% for i, j in duties %} 
+                    <div class="row justify-content-center link">
+                      <a href="{{ url }}{{ i.file }}" class="btn btn-primary" style="background-image: linear-gradient(to right, rgba(254, 172, 94, 0.5) 0%,rgba(199, 121, 208, 0.5) 50%,  rgba(75, 192, 200, 0.5) 100%);
+                      width: 100%; margin: 5px 0;" target="_blank">
+                        <b style="font-size: 2vw; word-wrap: break-word;"> {{ j }} </b>
+                      </a>
+                    </div>
+                {% endfor %}
+          </div>
+        </div>
+  </div>
+  </div>
+  {% endblock %}    

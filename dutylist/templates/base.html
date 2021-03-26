@@ -1,0 +1,137 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <title>GSRTC</title>
+
+    <!-- Icons -->
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+    <!-- Scripts -->
+    <script src="{% static 'js/main.js' %}" defer></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
+
+    <!-- Styles -->
+    <link href="{% static 'css/app.css' %}" rel="stylesheet">
+    <link href="{% static 'css/main.css' %}" rel="stylesheet">
+</head>
+<body id="body">
+    <div id="app">
+        <nav class="navbar navbar-expand-md navbar-laravel">
+            <div class="navigation container">
+                <a class="navbar-brand" href="/">
+                    ST Bhuj Depot
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    
+                    <!-- Right Side Of Navbar -->
+                    <ul class="navbar-nav ml-auto">
+                        <!-- Authentication Links -->
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contact Us</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main class="py-4">
+            {% block content %}
+            {% endblock %}
+        </main>
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer class="footer page-footer font-small pt-4">
+
+    <!-- Footer Links -->
+    <div class="container-fluid text-center text-md-left">
+
+      <!-- Grid row -->
+      <div class="row">
+
+        <!-- Grid column -->
+        <div class="col-md-1 mb-md-0 mb-3"></div>
+        <div class="col-md-6 mt-md-0 mt-3">
+
+          <!-- Content -->
+          <h5 class="text-uppercase">ST Bhuj Depot</h5>
+          <p>Driver Conductor Dutylist</p>
+            <h4>GSRTC</h3>
+
+        </div>
+        <!-- Grid column -->
+
+        <hr class="clearfix w-200 d-md-none pb-3">
+
+
+ 
+          <!-- Grid column -->
+            <div class="col-md-2 mb-md-0 mb-3">
+            </div>
+          <!-- Grid column -->
+          <div class="col-md-3 mb-md-0 mb-3">
+
+            <!-- Links -->
+            <h5 class="text-uppercase">Contact Us</h5>
+
+            <div class="row">
+                <div class="col-md-3">
+                    Website:
+                </div>
+                <div class="col-md-9">
+             <a href="https://gsrtc.in/site/">gsrtc.in</a>
+             </div>
+         </div>
+
+             <div class="row">
+                <div class="col-md-3">
+                    Phone 1:
+                </div>
+                <div class="col-md-9">
+             <a href="tel:+919979879410">V M Aboti</a>
+             </div>
+             </div>
+
+            <div class="row">
+                <div class="col-md-3">
+                    Phone 2:
+                </div>
+                <div class="col-md-9">
+             <a href="tel:+919909021572">V P Jadeja</a>
+         </div>
+         </div>
+          </div>
+          <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© Jvency Malani
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
+</body>
+</html>
