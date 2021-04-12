@@ -13,9 +13,9 @@
           <h2> Duties </h2>
                  {% for i, j in duties %} 
                     <div class="row justify-content-center link">
-                      <a href="{{ url }}{{ i.file }}" class="btn btn-primary" style="background-image: linear-gradient(to right, rgba(254, 172, 94, 0.5) 0%,rgba(199, 121, 208, 0.5) 50%,  rgba(75, 192, 200, 0.5) 100%);
-                      width: 100%; margin: 5px 0;" target="_blank">
-                        <b style="font-size: 2vw; word-wrap: break-word;"> {{ j }} </b>
+                      <a href="{{ url }}{{ i.file }}" class="btn btn-primary btn-file" style="background-image: linear-gradient(to right, rgba(254, 172, 94, 0.5) 0%,rgba(199, 121, 208, 0.5) 50%,  rgba(75, 192, 200, 0.5) 100%);
+                      width: 100%; margin: 5px 0; " target="_blank">
+                        <b style="font-size: 100%; word-wrap: break-word;"> {{ j }} </b>
                       </a>
                     </div>
                 {% endfor %}
